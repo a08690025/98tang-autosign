@@ -216,7 +216,7 @@ class BrowserDriverManager:
             # 创建驱动
             self.logger.debug("开始初始化浏览器实例")
             if UNDETECTED_AVAILABLE:
-                raw_driver = uc.Chrome(options=options)
+                raw_driver = uc.Chrome(options=options, version_main=151)
             else:
                 raw_driver = webdriver.Chrome(options=options)
 
