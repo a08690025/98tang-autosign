@@ -79,7 +79,10 @@ jobs:
         # 必需配置
         SITE_USERNAME: ${{ secrets.SITE_USERNAME }}
         SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
-        
+        ENABLE_SECURITY_QUESTION: ${{ secrets.ENABLE_SECURITY_QUESTION }}
+        SECURITY_QUESTION: ${{ secrets.SECURITY_QUESTION }}
+        SECURITY_ANSWER: ${{ secrets.SECURITY_ANSWER }}
+          
         # 安全提问配置
         ENABLE_SECURITY_QUESTION: ${{ vars.ENABLE_SECURITY_QUESTION || 'false' }}
         SECURITY_QUESTION: ${{ secrets.SECURITY_QUESTION }}
